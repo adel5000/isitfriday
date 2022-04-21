@@ -1,0 +1,133 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #3f51b5;
+  user-select: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 550px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 770px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+/* End Global Rules */
+
+/* start navbar  */
+.navbar {
+  background-color: #ffffff4f;
+  padding: 1px;
+}
+.navbar .container {
+  display: flex;
+}
+.navbar .container .logo {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navbar .container .logo img {
+  width: 100px;
+}
+.navbar .container .Header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .navbar .container .Header h1 {
+    font-size: 20px;
+  }
+}
+.content {
+  display: grid;
+  background-color: #9fa8daa1;
+  margin: 50px 0;
+  padding: 50px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0px #a9adc1;
+}
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    column-gap: 20px;
+    row-gap: 30px;
+    align-content: baseline;
+  }
+  .card {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+.card {
+  color: #fff;
+  background-color: #303f9f;
+  border-radius: 8px;
+  height: 200px;
+  margin-top: 35px;
+  font-family: "Aref Ruqaa", serif;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  user-select: none;
+  cursor: pointer;
+  transition: all linear 0.25s;
+}
+.card a,
+.card a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.card:hover {
+  padding-bottom: 40px;
+  background-color: #131c52;
+}
+.footer {
+  height: 100px;
+  background-color: #1a237e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .footer {
+    font-size: 15px;
+  }
+}
